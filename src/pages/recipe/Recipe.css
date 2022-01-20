@@ -1,0 +1,85 @@
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 3vmax auto;
+  text-align: center;
+  background: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.recipe h2 {
+  margin: 0px;
+}
+
+.recipe span {
+  font-weight: bold;
+}
+
+.recipe .img {
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100%;
+}
+.recipe ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.recipe li {
+  list-style-type: none;
+  margin-right: 10px;
+  color: #f05454;
+}
+.recipe li::after {
+  content: ",";
+}
+.recipe li:last-child::after {
+  content: ".";
+}
+.method {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+@media (max-width: 950px) {
+  .recipe {
+    font-size: 1.2rem;
+    max-width: 550px;
+    margin: 5vmax auto;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .recipe h2 {
+    margin: 10px auto;
+  }
+  .recipe ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .recipe li {
+    list-style-type: none;
+    margin-right: 10px;
+    color: #777;
+  }
+  .recipe li::after {
+    content: ",";
+  }
+  .recipe li:last-child::after {
+    content: ".";
+  }
+  .method {
+    text-align: left;
+    line-height: 1.5em;
+  }
+}

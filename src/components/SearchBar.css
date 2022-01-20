@@ -1,0 +1,31 @@
+.searchbar form {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input {
+  margin-left: 10px;
+}
+
+.searchbar input::placeholder {
+  visibility: hidden;
+}
+
+@media (max-width: 950px) {
+  .searchbar label {
+    display: none;
+  }
+
+  .searchbar input::placeholder {
+    visibility: visible;
+  }
+
+  .searchbar form {
+    display: flex;
+    align-items: center;
+  }
+
+  .searchbar input {
+    margin-left: 0px;
+  }
+}
