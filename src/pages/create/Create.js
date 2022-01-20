@@ -78,7 +78,7 @@ const Create = () => {
         </label>
         <label>
           <span>Recipe image :</span>
-          <input type="text" onChange={(e) => setImage(e.target.value)} value={image} required />
+          <input className="img-input" type="text" onChange={(e) => setImage(e.target.value)} value={image} required placeholder="Please paste an image URL here."/>
         </label>
         <label>
           <span>Cooking Time (minutes) :</span>

@@ -1,6 +1,6 @@
 .recipe-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 40px auto;
@@ -60,6 +60,10 @@
   padding: 8px;
   border-radius: 4px;
   margin: 0px auto;
+}
+
+.recipe-list .card a:hover {
+  background: #d64f4f;
 }
 
 @media (max-width: 950px) {

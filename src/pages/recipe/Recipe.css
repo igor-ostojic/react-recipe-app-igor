@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
   max-width: 900px;
   margin: 3vmax auto;
   text-align: center;
@@ -35,6 +35,7 @@
   list-style-type: none;
   margin-right: 10px;
   color: #f05454;
+  font-style: italic;
 }
 .recipe li::after {
   content: ",";
