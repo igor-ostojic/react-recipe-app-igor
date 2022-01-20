@@ -15,7 +15,6 @@
   text-decoration: none;
 }
 
-
 .navbar a:last-child {
   color: #fff;
   text-decoration: none;
@@ -62,5 +61,11 @@
   .navbar a:last-child:hover {
     background: #f05454;
     color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 615px) {
+  .navbar {
+    display: none;
   }
 }

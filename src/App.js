@@ -10,12 +10,14 @@ import Navbar from "./components/Navbar";
 
 //styles
 import "./App.css";
+import MobileNav from "./components/MobileNav";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <MobileNav />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />

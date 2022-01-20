@@ -26,6 +26,14 @@
   }
 
   .searchbar input {
-    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 615px) {
+  .searchbar input {
+    width: 80%;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 }
