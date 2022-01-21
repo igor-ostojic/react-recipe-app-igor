@@ -2,7 +2,7 @@ import "./MobileNav.css";
 
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const Hamburger = () => {
   return (

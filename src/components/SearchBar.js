@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SearchBar.css";
 
@@ -15,7 +15,13 @@ const SearchBar = () => {
     <div className="searchbar">
       <form onSubmit={handleSubmit}>
         <label htmlFor="search">Search</label>
-        <input type="text" id="search" onChange={(e) => setTerm(e.target.value)} required placeholder="search" />
+        <input
+          type="text"
+          id="search"
+          onChange={(e) => setTerm(e.target.value)}
+          required
+          placeholder="search"
+        />
       </form>
     </div>
   );
